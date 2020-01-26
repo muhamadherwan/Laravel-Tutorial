@@ -78,6 +78,6 @@ Build a CRUD application in less then 2hours tutorial using laravel for newbies.
           * [x] use Illuminate\Database\Eloquent\SoftDeletes;
           * [x] use SoftDeletes;
   * [x] Overal Function Testing
-  * [] Git Upload
+  * [x] Git Upload
   * [] Upload to online server
   
