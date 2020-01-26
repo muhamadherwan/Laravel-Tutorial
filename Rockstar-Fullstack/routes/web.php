@@ -14,3 +14,5 @@
 Route::get('/', 'RockstarsController@index');
 
 Route::resource('rockstars', 'RockstarsController');
+
+Route::get('about', 'PageController@about');

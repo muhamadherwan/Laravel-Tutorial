@@ -2,7 +2,7 @@
 
 ## Project Name: Rockstar-Fullstack
 
-Build a CRUD application in less then 2hours tutorial using laravel for newbies.
+Build a CRUD application in less then 2hours and upload it online tutorial using laravel for newbies.
 
 * [x] Installation
     * [x] composer
@@ -77,7 +77,28 @@ Build a CRUD application in less then 2hours tutorial using laravel for newbies.
         * [x] Insert softDelete statement in model file
           * [x] use Illuminate\Database\Eloquent\SoftDeletes;
           * [x] use SoftDeletes;
-  * [x] Overal Function Testing
-  * [x] Git Upload
-  * [] Upload to online server
+  * [x] Overal CRUD Function Testing
+  * [x] About Page
+    * [x] Create controller
+    * [x] Set routes
+    * [x] Set about page view function in controller  
+    * [x] Create about.blade.php theme file in view folder
+    * [x] Set the about page link in navigation bar in main.blade.php theme file
   
+  * [x] Git Upload
+
+  * [] Upload to online server
+    * Prepare database
+      * [] Export local table to .sql file  
+      * [] Create the database in sever
+      * [] Import the table to database in sever
+    * Upload source code
+      * [] Create laravel_rockstars directory outside public_html folder
+        * [] Upload all laravel directory exclude public folder in this folder
+      * [] Create subdirectory rockstars in public_html
+        * [] Upload public file in the rockstars subdirectory
+      * [] Update index.php file in rockstars subdirectory:
+        * [] require __DIR__.'/../../laravel_rockstars/vendor/autoload.php';
+        * [] $app = require_once __DIR__.'/../../laravel_rockstars/bootstrap/app.php';
+      * [] Update .env file database connnection detail
+      * [] Overall test     

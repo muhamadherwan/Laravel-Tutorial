@@ -1,6 +1,6 @@
 @extends('layout/main')
 
-@section('title', 'Rockstars Fullstack!')
+@section('title', '*wanlab')
 
 @section('container')
 <div class ='container'>
@@ -19,9 +19,11 @@
 
 <ul class="list-group">
 @foreach( $rockstars as $rockstar )
-  <li class="list-group-item d-flex justify-content-between align-items-center">
+
+  <li class="list-group-item d-flex justify-content-between align-items-center list-group-item-action active">
     {{ $rockstar->nama }}
-    <a href="/rockstars/{{ $rockstar->id}}" class="btn btn-primary">Detail</a>
+    <a href="/rockstars/{{ $rockstar->id}}" class="btn btn-success">Detail</a>
+    
     <!--<a href="/rockstars/{{ $rockstar->id }}/edit" class="btn btn-dark">Edit</a>
     <form action="/rockstars/{{ $rockstar->id }}" method="post" class="d-inline">
   @method('delete')

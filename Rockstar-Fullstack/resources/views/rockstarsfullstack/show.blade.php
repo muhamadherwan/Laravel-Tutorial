@@ -8,14 +8,14 @@
 <div class ='col-6'>
 <h1 class="mt-3">Rockstars Fullstack</h1>
 
-<div class="card" style="width: 18rem;">
+<div class="card text-white bg-primary mb-3" style="max-width: 27rem;">
   <div class="card-body">
-    <h5 class="card-title">{{ $rockstar->nama }}</h5>
-    <h6 class="card-subtitle mb-2 text-muted">{{ $rockstar->company }}</h6>
-    <h6 class="card-text">{{ $rockstar->phone }}</h6>
-    <h6 class="card-text">{{ $rockstar->email }}</h6>
+  <h3 class="card-title">{{ $rockstar->nama }}</h3>
+  <h5 class="card-title">{{ $rockstar->company }}</h4>
+    <p class="card-text">{{ $rockstar->phone }}</p>
+    <p class="card-text">{{ $rockstar->email }}</p>
 
-  <a href="{{ $rockstar->id }}/edit" class="btn btn-primary">Edit</a>
+  <a href="{{ $rockstar->id }}/edit" class="btn btn-success">Edit</a>
 
   <form action="{{ $rockstar->id }}" method="post" class="d-inline">
   @method('delete')
@@ -26,6 +26,8 @@
   <a href="/rockstars" class="btn btn-dark">Back</a>
   </div>
 </div>
+
+
 
 </div>
 </div>
